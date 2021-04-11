@@ -4,10 +4,8 @@ A Spring boot based microservices application which exposes RESTful api for cred
 ## Getting Started 
 * Make sure you have Java 8 installed.
 * Make sure you have Maven
-* If running outside a docker container Make sure application.properties is available to the application. It should be in the same folder as the jar file or in the same folder as the application root. Environment specific props files can be used in the following way application-{env}.properties
-```
- example application-bat.properties. 
-```
+* If running outside a docker container Make sure application.properties is available to the application.  
+
 ##  Build
 ```
 run mvn clean install
@@ -21,11 +19,8 @@ run mvn clean install
 ```creditcardservice.swagger.config=true```
 * Swagger url http://localhost:8080/creditcardservice/swagger-ui.html
 
-## Starting the application
-In eclipse , just right click on Application.Java and run as java application. If you want to start it with a specific profile use -Dspring.profiles.active={env}
-To run as jar, refer to restart-creditcardservice.sh script.
-
-
+## Starting the application in IDE
+just right click on Application.Java and run as java application. If you want to start it with a specific profile use -Dspring.profiles.active={env}
 
 ## Common issues at startup
 
